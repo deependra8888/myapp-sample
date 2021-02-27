@@ -5,15 +5,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./app.css">
-  <title>Document</title>
+  <title>form validator</title>
 </head>
 <body>
-  <header>
-    <h1 class="title">Etch-a-sketch</h1>
-  </header>
-  <div id="main-container" class="container">
-    <button id="reset-button" class="button">Change size</button>
-    <div id="grid-container" class="grid"></div>
-  </div>
+    <div class="container">
+      <form  id="form" class="form">
+        <h2>Register With Us</h2>
+        <div class="form-control">
+          <label for="username">username</label>
+          <input type="text" id="username" placeholder="enter username">
+          <small>error message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="enter Email">
+          <small>error message</small>
+        </div>
+        <div class="form-control">
+          <label for="Password">Password</label>
+          <input type="password" id="password" placeholder="enter Password">
+          <small>error message</small>
+        </div>
+        <div class="form-control">
+          <label for="Password2">Confirm Password</label>
+          <input type="password" id="password2" placeholder="enter Password again">
+          <small>error message</small>
+        </div>
+        <div class="btn">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="./app.js"></script>
 </body>
 </html>
